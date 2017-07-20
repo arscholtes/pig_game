@@ -68,3 +68,9 @@ class Moron < Player
     super && @roll_die != 2
   end
 end
+
+class CoolCat < Player
+  def roll_again?
+    super && @roll_die = 4 or 5 or 6 or 2
+  end
+end
